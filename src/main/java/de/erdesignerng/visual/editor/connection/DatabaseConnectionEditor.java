@@ -122,6 +122,21 @@ public class DatabaseConnectionEditor extends BaseEditor {
 	@Override
 	protected void commandOk() {
 
+		bindingInfo.view2model();
+
+		DatabaseConnectionDatamodel theModel = bindingInfo
+		.getDefaultModel();
+
+		if(theModel.getDialect() == null) {
+
+			MessagesHelper
+					.displayErrorMessage(
+							this,
+							getResourceHelper()
+									.getText(
+											ERDesignerBundle.PLEASECHOOSEDIALECT));
+		}
+
 		if (bindingInfo.validate().isEmpty()) {
 
 			bindingInfo.view2model();
@@ -132,16 +147,30 @@ public class DatabaseConnectionEditor extends BaseEditor {
 
 	private void commandTest() {
 
+		bindingInfo.view2model();
+
+		DatabaseConnectionDatamodel theModel = bindingInfo
+		.getDefaultModel();
+
+		if(theModel.getDialect() == null) {
+
+			MessagesHelper
+					.displayErrorMessage(
+							this,
+							getResourceHelper()
+									.getText(
+											ERDesignerBundle.PLEASECHOOSEDIALECT));
+		}
+
 		if (bindingInfo.validate().isEmpty()) {
 
 			bindingInfo.view2model();
 
-			DatabaseConnectionDatamodel theModel = bindingInfo
-					.getDefaultModel();
-
 			Dialect theDialect = theModel.getDialect();
 
 			try {
+
+			
 
 				Connection theConnection = theDialect.createConnection(
 						ApplicationPreferences.getInstance()

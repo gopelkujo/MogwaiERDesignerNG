@@ -391,6 +391,10 @@
             <Text lang="de">Bitte definieren Sie vorher eine Datenbankverbindung!</Text>
             <Text lang="en">Please define a database connection prior to using this operation!</Text>
         </Entry>
+        <Entry id="PLEASECHOOSEDIALECT">
+            <Text lang="de">Bitte wählen Sie den Dialekt!</Text>
+            <Text lang="en">Please choose the dialect!</Text>
+        </Entry>
         <Entry id="SIZE">
             <Text lang="de">Größe</Text>
             <Text lang="en">Size</Text>

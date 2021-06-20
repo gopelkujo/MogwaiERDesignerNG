@@ -55,8 +55,8 @@
         </pluginRepository>
     </pluginRepositories>
     <build>
-        <defaultGoal>package</defaultGoal>
-        <plugins>
+        <defaultGoal>package</defaultGoal>	
+        <plugins>		
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
@@ -472,6 +472,12 @@
                         <groupId>org.codehaus.mojo</groupId>
                         <artifactId>exec-maven-plugin</artifactId>
                         <version>3.0.0</version>
+                        <configuration>
+                            <mainClass>de.erdesignerng.visual.ERDesigner</mainClass>
+                            <arguments>
+                                <argument>xxx</argument>
+                            </arguments>
+                        </configuration>
                         <executions>
                             <execution>
                                 <id>jpackage-rpm</id>
@@ -589,6 +595,12 @@
                         <groupId>org.codehaus.mojo</groupId>
                         <artifactId>exec-maven-plugin</artifactId>
                         <version>3.0.0</version>
+                        <configuration>
+                            <mainClass>de.erdesignerng.visual.ERDesigner</mainClass>
+                            <arguments>
+                                <argument>xxx</argument>
+                            </arguments>
+                        </configuration>
                         <executions>
                             <execution>
                                 <id>jpackage-msi</id>
@@ -712,6 +724,12 @@
                         <groupId>org.codehaus.mojo</groupId>
                         <artifactId>exec-maven-plugin</artifactId>
                         <version>3.0.0</version>
+                        <configuration>
+                            <mainClass>de.erdesignerng.visual.ERDesigner</mainClass>
+                            <arguments>
+                                <argument>xxx</argument>
+                            </arguments>
+                        </configuration>
                         <executions>
                             <execution>
                                 <id>jpackage-rpm</id>
