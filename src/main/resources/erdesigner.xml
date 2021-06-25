@@ -395,6 +395,10 @@
             <Text lang="de">Bitte wählen Sie den Dialekt!</Text>
             <Text lang="en">Please choose the dialect!</Text>
         </Entry>
+        <Entry id="PLEASEFILLTHEFORM">
+            <Text lang="de">Bitte füllen Sie das leere Formular aus!</Text>
+            <Text lang="en">Please fill the empty form!</Text>
+        </Entry>
         <Entry id="SIZE">
             <Text lang="de">Größe</Text>
             <Text lang="en">Size</Text>

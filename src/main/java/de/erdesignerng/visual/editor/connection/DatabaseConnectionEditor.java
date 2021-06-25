@@ -135,6 +135,14 @@ public class DatabaseConnectionEditor extends BaseEditor {
 							getResourceHelper()
 									.getText(
 											ERDesignerBundle.PLEASECHOOSEDIALECT));
+		} else if(theModel.getAlias().length() == 0 || theModel.getDriver().length() == 0 || theModel.getUrl().length() == 0 || theModel.getUser().length() == 0) {
+
+			MessagesHelper
+					.displayErrorMessage(
+							this,
+							getResourceHelper()
+									.getText(
+											ERDesignerBundle.PLEASEFILLTHEFORM));
 		}
 
 		if (bindingInfo.validate().isEmpty()) {
@@ -160,6 +168,14 @@ public class DatabaseConnectionEditor extends BaseEditor {
 							getResourceHelper()
 									.getText(
 											ERDesignerBundle.PLEASECHOOSEDIALECT));
+		} else if(theModel.getAlias().length() == 0 || theModel.getDriver().length() == 0 || theModel.getUrl().length() == 0 || theModel.getUser().length() == 0) {
+
+			MessagesHelper
+					.displayErrorMessage(
+							this,
+							getResourceHelper()
+									.getText(
+											ERDesignerBundle.PLEASEFILLTHEFORM));
 		}
 
 		if (bindingInfo.validate().isEmpty()) {
